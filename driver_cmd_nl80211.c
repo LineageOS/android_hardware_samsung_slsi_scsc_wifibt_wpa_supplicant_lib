@@ -162,7 +162,7 @@ int wpa_driver_set_ap_wps_p2p_ie(void *priv, const struct wpabuf *beacon,
 	} cmd_arr[] = {
 		{0x1, beacon},
 		{0x2, proberesp},
-		{0x4, assocresp},
+		{0x3, assocresp},
 		{-1, NULL}
 	};
 
