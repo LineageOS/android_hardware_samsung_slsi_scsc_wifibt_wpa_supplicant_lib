@@ -178,7 +178,7 @@ int wpa_driver_set_ap_wps_p2p_ie(void *priv, const struct wpabuf *beacon,
 	for (i = 0; cmd_arr[i].cmd != -1; i++) {
 		ap_wps_p2p_ie = cmd_arr[i].src;
 		if (ap_wps_p2p_ie) {
-			buf_len = strlen(_cmd) + 3 + wpabuf_len(ap_wps_p2p_ie);
+			buf_len = strlen(_cmd) + 5 + wpabuf_len(ap_wps_p2p_ie);
 			buf = os_zalloc(buf_len);
 			if (NULL == buf) {
 				wpa_printf(MSG_ERROR, "%s: Out of memory",
